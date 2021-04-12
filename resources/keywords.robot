@@ -7,11 +7,10 @@ Library                QVision
 
 *** Variables ***
  ${BROWSER}                 chrome
- ${Url1}                   https://dssdemo71031b2x.intershopsandbox.com/INTERSHOP/web/WFS/inSPIRED-Coveo_B2B-Site/en_US/-/USD
- ${User_id}                qavalidation@mail.com
- ${Pass}                   test123
- ${product_position}       1 
- ${position}            2
+ ${Url1}                   tst.lindelink.com/login
+ #${User_id}                qavalidation@mail.com
+ #${Pass}                   test123
+
 
    
 *** Keywords ***
@@ -30,16 +29,14 @@ Appstate
      ...                Login
      Run Keyword If     '${state}' == 'userlogin'
 	...                UserLogin
-    Run Keyword If       '${state}' ==  'searchorder'
+   # Run Keyword If       '${state}' ==  'searchorder'
     ...                SearchOrder
   
 Login
       HotKey                 ctrl    shift   N  
       QWeb.SwitchWindow      NEW 
       QWeb.GoTo              ${Url1}
-      QWeb.TypeSecret        DefaultUserLogin_Login       ${User_id}
-      QWeb.TypeSecret        DefaultUserLogin_Password   ${Pass} 
-      QWeb.ClickText         Log In
+      
      
 UserLogin
      QWeb.Appstate              login
