@@ -29,7 +29,7 @@ Appstate
      Run Keyword If     '${state}' == 'userlogin'
 	...                UserLogin
    # Run Keyword If       '${state}' ==  'searchorder'
-    ...                SearchOrder
+    ...               # SearchOrder
   
 Login
       HotKey                 ctrl    shift   N  
