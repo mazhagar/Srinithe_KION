@@ -6,14 +6,14 @@ Library                QVision
 
 
 *** Variables ***
- ${BROWSER}                chrome
- ${Url1}                   https://tst.lindelink.com/login
+ ${browser}                chrome
+ ${siteurl}                   https://tst.lindelink.com/login
  
    
 *** Keywords ***
 
 Setup Browser
-    Open Browser       about:blank    ${BROWSER}
+    Open Browser       about:blank    ${browser}
 
 End suite
      Close All Browsers
@@ -31,7 +31,7 @@ Appstate
 Login
       HotKey                 ctrl    shift   N  
       QWeb.SwitchWindow      NEW 
-      QWeb.GoTo              ${Url1}
+      QWeb.GoTo              ${siteurl}
       
      
 UserLogin
