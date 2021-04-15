@@ -9,8 +9,6 @@ Library                QVision
  ${BROWSER}                 chrome
  ${Url1}                   https://tst.lindelink.com/login
  
-
-
    
 *** Keywords ***
 
