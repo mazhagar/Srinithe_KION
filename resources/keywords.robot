@@ -6,7 +6,7 @@ Library                QVision
 
 
 *** Variables ***
- ${BROWSER}                 chrome
+ ${BROWSER}                chrome
  ${Url1}                   https://tst.lindelink.com/login
  
    
