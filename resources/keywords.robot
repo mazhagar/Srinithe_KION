@@ -26,8 +26,7 @@ Appstate
      ...                Login
      Run Keyword If     '${state}' == 'userlogin'
 	...                UserLogin
-   # Run Keyword If       '${state}' ==  'searchorder'
-    ...               # SearchOrder
+  
   
 Login
       HotKey                 ctrl    shift   N  
@@ -36,21 +35,11 @@ Login
       
      
 UserLogin
-     QWeb.Appstate              login
-     #QWeb.VerifyText            Login
-     #QWeb.ClickText             Login   
+     QWeb.Appstate              login   
      QWeb.TypeSecret            //*[@id\="ShopLoginForm_Login"]             ${login1} 
      QWeb.TypeSecret            //*[@id\="ShopLoginForm_Password"]            ${pwd1}
      QWeb.ClickText             Login
-     #QWeb.ClickElement         //*[@id\="header"]/div[2]/a
-
-#Checkout
-    #QWeb.ClickText             Proceed To Checkout
-    #QWeb.VerifyText            Cash on Delivery
-    #QWeb.ClickText             Cash on Delivery
-    #QWeb.ClickCheckbox         Terms and Conditions       on     
-    #QWeb.ClickText             Place Order Now 
-
+    
 
     
 
