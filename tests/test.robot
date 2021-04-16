@@ -9,7 +9,7 @@ Suite Teardown    End suite
 
 Verify Truck Sales details
 [Documentation]            Verify the Truck Sales details 
-  QWeb.Appstate            UserLogin 
+  QWeb.Appstate            login 
   QWeb.VerifyText          50013
   QWeb.ClickText           50013
   QWeb.VerifyText          ORDERS
