@@ -7,7 +7,7 @@ Library                QVision
 
 *** Variables ***
  ${BROWSER}                chrome
- ${siteurl}                   https://tst.lindelink.com/login
+ ${Site_Base_URL}                  https://tst.lindelink.com/login
  
    
 *** Keywords ***
@@ -31,7 +31,8 @@ Appstate
 Login
       HotKey                 ctrl    shift   N  
       QWeb.SwitchWindow      NEW 
-      QWeb.GoTo              ${siteurl}
+      QWeb.GoTo              ${Site_Base_URL}
+
       
      
 UserLogin
