@@ -31,12 +31,7 @@ Appstate
 Login
       HotKey                 ctrl    shift   N  
       QWeb.SwitchWindow      NEW 
-      QWeb.GoTo              ${Site_Base_URL}
-
-      
-     
-UserLogin
-     QWeb.Appstate              login   
+      QWeb.GoTo              ${Site_Base_URL}  
      QWeb.TypeSecret            //*[@id\="ShopLoginForm_Login"]             ${login1} 
      QWeb.TypeSecret            //*[@id\="ShopLoginForm_Password"]            ${pwd1}
      QWeb.ClickText             Login
