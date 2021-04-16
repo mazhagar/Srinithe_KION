@@ -6,14 +6,14 @@ Library                QVision
 
 
 *** Variables ***
- ${Browser}                chrome
+ ${BROWSER}                chrome
  ${siteurl}                   https://tst.lindelink.com/login
  
    
 *** Keywords ***
 
 Setup Browser
-    Open Browser       about:blank    ${Browser}
+    Open Browser       about:blank    ${BROWSER}
 
 End suite
      Close All Browsers
