@@ -1,7 +1,7 @@
 *** Settings ***
 Resource          ../resources/keywords.robot
-Suite Setup       Setup Browser
-Suite Teardown    End suite
+Suite Setup       Setup Browser    about:blank    chrome
+Suite Teardown    Close All Browsers
 
 
 
