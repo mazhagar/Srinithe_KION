@@ -1,4 +1,5 @@
 *** Settings ***
+Library             Dialogs
 Library                QWeb
 # Suitable libraries as per the use case
 Library                String
@@ -13,7 +14,8 @@ Library                QVision
 *** Keywords ***
 
 Setup Browser
-    Open Browser       about:blank    ${BROWSER}
+    Open Browser       about:blank    chrome
+
 
 End suite
      Close All Browsers
@@ -24,9 +26,7 @@ Appstate
      ${state}=          Convert To Lowercase    ${state}
      Run Keyword If     '${state}' == 'login'
      ...                Login
-     Run Keyword If     '${state}' == 'userlogin'
-	...                UserLogin
-  
+       
   
 Login
      
