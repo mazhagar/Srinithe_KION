@@ -29,12 +29,11 @@ Appstate
   
   
 Login
-     HotKey                 ctrl    shift   N  
-     QWeb.SwitchWindow      NEW 
-     QWeb.GoTo              ${Site_Base_URL}  
-     QWeb.TypeSecret            //*[@id\="ShopLoginForm_Login"]             ${login1} 
-     QWeb.TypeSecret            //*[@id\="ShopLoginForm_Password"]            ${pwd1}
-     QWeb.ClickText             Login
+     
+     GoTo              https://tst.lindelink.com/login
+     TypeSecret            //*[@id\="ShopLoginForm_Login"]             ${login1} 
+     TypeSecret            //*[@id\="ShopLoginForm_Password"]            ${pwd1}
+     ClickText             Login
     
 
     
